@@ -21,6 +21,23 @@ Zed extension for the
 
 ![Harper in the Zed Extension Gallery](./images/extension_in_gallery.png)
 
+## Configuration
+
+To disable specific rules, add following to `Zed/settings.json`. Consult diagnostic tooltips and [the list of Harper rules](https://writewithharper.com/docs/rules).
+```
+"lsp: {
+    "harper-ls": {
+        "settings": {
+            "harper-ls": {
+                "linters": {
+                    // "RuleName": false,
+                },
+            },
+        },
+    },
+}
+```
+
 ## Acknowledgments
 
 - [elijah-potter](https://github.com/elijah-potter) for creating Harper
