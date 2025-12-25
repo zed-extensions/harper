@@ -24,6 +24,8 @@ Zed extension for the
 ## Configuration
 
 To disable specific rules, add following to `Zed/settings.json`. 
+
+```
 "lsp: {
     "harper-ls": {
         "settings": {
