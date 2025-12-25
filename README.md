@@ -23,20 +23,23 @@ Zed extension for the
 
 ## Configuration
 
-To disable specific rules, add following to `Zed/settings.json`. Consult diagnostic tooltips and [the list of Harper rules](https://writewithharper.com/docs/rules).
-```
+To disable specific rules, add following to `Zed/settings.json`. 
 "lsp: {
     "harper-ls": {
         "settings": {
             "harper-ls": {
                 "linters": {
-                    // "RuleName": false,
+                    // "RuleName": false, // For rule names consult tooltips and https://writewithharper.com/docs/rules
                 },
             },
         },
     },
 }
 ```
+
+To have a project wise dictionary create `.harper-dictionary.txt` in the project root or configure dictionary location by passing `"userDictPath": "%relative_path%",` inside `"settings": {"harper-ls": {...}}`. The dictionary should be a simple line-separated text file.
+
+For additional info consult [Harper LS configuration page](https://writewithharper.com/docs/integrations/language-server#Configuration).
 
 ## Acknowledgments
 
