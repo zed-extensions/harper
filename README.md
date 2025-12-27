@@ -39,7 +39,7 @@ To disable specific rules, add following to `Zed/settings.json`.
 }
 ```
 
-To have a project wise dictionary create `.harper-dictionary.txt` in the project root or configure dictionary location by passing `"userDictPath": "%relative_path%",` inside `"settings": {"harper-ls": {...}}`. The dictionary should be a simple line-separated text file.
+To have a project-specific dictionary, create `.harper-dictionary.txt` in the project root or configure dictionary location by passing `"userDictPath": "%relative_path%",` inside `"settings": {"harper-ls": {...}}`. The dictionary should be a simple line-separated text file.
 
 For additional info consult [Harper LS configuration page](https://writewithharper.com/docs/integrations/language-server#Configuration).
 
