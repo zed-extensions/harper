@@ -1,7 +1,7 @@
 # Harper Zed Extension
 
 Zed extension for the
-[Harper Grammar Checker](https://github.com/elijah-potter/harper) LS.
+[Harper Grammar Checker](https://github.com/Automattic/harper) LS.
 
 ![Harper running inside zed](./images/zed_demo.png)
 

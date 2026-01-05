@@ -53,7 +53,7 @@ impl HarperExtension {
         );
 
         let release = zed::latest_github_release(
-            "elijah-potter/harper",
+            "Automattic/harper",
             zed::GithubReleaseOptions {
                 require_assets: true,
                 pre_release: false,
