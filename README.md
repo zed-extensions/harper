@@ -27,7 +27,7 @@ When Harper encounters a potentially misspelled word in the Zed editor, the word
 
 To view view more details, you can hover the highlighted word to see the warning and related Harper rule.
 
-To fix the issue, click or move the cursor to the highlighted word and then open the Zed _code actions_ shortcut (default keyboard shortcut: `CTRL + .`) to see a list of suggested fixes. You can also click the lightning icon for the relevant line to see the same code actions.
+To fix the issue, click or move the cursor to the highlighted word and then open the Zed _code actions_ (default keyboard shortcut: `CTRL + .`) to see a list of suggested fixes. You can also click the lightning icon for the relevant line to see the same code actions.
 
 For simple grammar and spelling mistakes, this is usually enough to quickly find and fix issues.
 
