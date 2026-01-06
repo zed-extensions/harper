@@ -1,6 +1,6 @@
 use std::fs;
 use std::path::PathBuf;
-use zed_extension_api::{self as zed, settings::LspSettings, Result};
+use zed_extension_api::{self as zed, Result, settings::LspSettings};
 
 struct HarperExtension {
     binary_cache: Option<PathBuf>,
@@ -31,13 +31,13 @@ impl HarperExtension {
             });
         }
 
-        if let Some(path) = &self.binary_cache {
-            if path.exists() {
-                return Ok(HarperBinary {
-                    path: path.clone(),
-                    env: None,
-                });
-            }
+        if let Some(path) = &self.binary_cache
+            && path.exists()
+        {
+            return Ok(HarperBinary {
+                path: path.clone(),
+                env: None,
+            });
         }
 
         self.install_binary(language_server_id)
@@ -119,10 +119,10 @@ impl HarperExtension {
 
             if let Ok(entries) = fs::read_dir(".") {
                 for entry in entries.flatten() {
-                    if let Ok(name) = entry.file_name().into_string() {
-                        if name != version_dir {
-                            fs::remove_dir_all(entry.path()).ok();
-                        }
+                    if let Ok(name) = entry.file_name().into_string()
+                        && name != version_dir
+                    {
+                        fs::remove_dir_all(entry.path()).ok();
                     }
                 }
             }
