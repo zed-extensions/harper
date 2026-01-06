@@ -43,15 +43,19 @@ You can configure where these dictionaries are stored. See below for more info.
 
 ## Configuration
 
-To disable specific rules, add the following to `Zed/settings.json`:
+This extension lets you customise the [Harper LS configuration](https://writewithharper.com/docs/integrations/language-server#Configuration) by for example adding the following to your `Zed/settings.json`:
 
-```
+```jsonc
 "lsp: {
     "harper-ls": {
         "settings": {
             "harper-ls": {
+                // Use a specific English dialect
+                "dialect": "British",
                 "linters": {
-                    // "RuleName": false, // For rule names consult tooltips and https://writewithharper.com/docs/rules
+                    // Disable specific rules
+                    // For rule names consult tooltips and https://writewithharper.com/docs/rules
+                    "RuleName": false,
                 },
             },
         },
@@ -59,7 +63,32 @@ To disable specific rules, add the following to `Zed/settings.json`:
 }
 ```
 
-To have a project-specific dictionary, create `.harper-dictionary.txt` in the project root or configure dictionary location by passing `"userDictPath": "%relative_path%",` inside `"settings": {"harper-ls": {...}}`. The dictionary should be a simple line-separated text file.
+Note that both of the two nested layers of `harper-ls` are required for the configuration to work.
+
+### Configuring Dictionary Locations
+
+Harper dictionary files should be simple line-separated text files. Learn more about how they work, and where you can find them in the [Harper documentation](https://writewithharper.com/docs/integrations/language-server#Dictionaries).
+
+You can configure where to store your user dictionary, workspace dictionary and file dictionaries by editing `Zed/settings.json`:
+
+```jsonc
+"lsp: {
+    "harper-ls": {
+        "settings": {
+            "harper-ls": {
+                // Set the file path where the user dictionary is located
+                "userDictPath": "%relative_path%",
+
+                // Set the file path where the workspace dictionary is located
+                "workspaceDictPath": ".harper-dictionary.txt",
+
+                // Set the directory where the file-local dictionaries are located
+                  "fileDictPath": "%relative_path%"
+            },
+        },
+    },
+}
+```
 
 For additional info consult [Harper LS configuration page](https://writewithharper.com/docs/integrations/language-server#Configuration).
 
