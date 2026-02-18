@@ -1,6 +1,6 @@
 id = "harper"
 name = "harper"
-version = "0.1.2"
+version = "0.1.3"
 schema_version = 1
 authors = ["Stef Robbe <stef.robbe@protonmail.com>"]
 description = "Harper LS support, an offline, privacy-first grammar&spelling checker"
