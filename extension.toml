@@ -3,7 +3,7 @@ name = "harper"
 version = "0.1.2"
 schema_version = 1
 authors = ["Stef Robbe <stef.robbe@protonmail.com>"]
-description = "Harper LS support, an offline, privacy-first grammar&spelling checker"
+description = "Fast, offline, grammar & spelling checker using the privacy-first Harper language server by Automattic"
 repository = "https://github.com/zed-extensions/harper"
 
 [language_servers.harper-ls]
