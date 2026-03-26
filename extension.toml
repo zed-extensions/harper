@@ -55,7 +55,8 @@ languages = [
   "Markdown",
   # https://github.com/zed-extensions/nix/blob/main/languages/nix/config.toml
   "Nix",
-  # (!) "Org Mode",
+  # https://github.com/hron/zed-org/blob/main/languages/org/config.toml
+  "Org",
   # https://github.com/zed-extensions/php/blob/main/languages/php/config.toml
   "PHP",
   # https://github.com/wingyplus/zed-powershell/blob/main/languages/powershell/config.toml
