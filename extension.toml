@@ -8,91 +8,81 @@ repository = "https://github.com/zed-extensions/harper"
 
 [language_servers.harper-ls]
 name = "Harper LS"
-# Not all of these are supported by Harper yet, see: https://github.com/Stef16Robbe/harper_zed/pull/4#issuecomment-2469318095
-# See nvim config for supported langs: https://github.com/neovim/nvim-lspconfig/blob/master/lua/lspconfig/configs/harper_ls.lua
+# Languages supported by harper-ls are listed in <https://writewithharper.com/docs/integrations/language-server#Supported-Languages>.
+# The entry in the list of languages below must match the name field from the config.toml file for that language.
+# For languages that are available natively in Zed, the said file can be found in <https://github.com/zed-industries/zed/tree/main/crates/languages/src>.
+# For those that are not, a link has been provided. For a list of all languages, see <https://zed.dev/docs/languages>.
+# Do not assume the name of any language! For instance, C# has been be listed as `CSharp`.
+# Languages marked with (!) are supported by harper-ls but not Zed.
 languages = [
-  # General Purpose
-  "Python",
-  "Go",
-  "C",
-  "Cpp",
-  "Java",
-  "Rust",
-  "Zig",
-  "Dart",
-  "Elixir",
-  "Erlang",
-  "Gleam",
-  "Groovy",
-  "Haskell",
-  "Julia",
-  "Kotlin",
-  "Nim",
-  "OCaml",
-  "PHP",
-  "PureScript",
-  "R",
-  "Racket",
-  "Roc",
-  "Ruby",
-  "Scala",
-  "Scheme",
-  "Uiua",
-
-  # Scripting
-  "Lua",
-  "Luau",
-  "Bash",
-  "Deno",
-  "Fish",
-  "GDScript",
-  "Rego",
-
-  # Web
-  "HTML",
-  "CSS",
-  "Javascript",
-  "Typescript",
-  "Svelte",
-  "Astro",
-  "Vue",
-  "Elm",
-
-  # Markup
-  "Markdown",
+  # Sorted in identical manner as upstream.
+  # https://github.com/dunyakirkali/zed-asciidoc/blob/main/languages/asciidoc/config.toml
   "AsciiDoc",
-  "ReStructuredText",
-  "XML",
-  "Typst",
-  "LaTeX",
-
-  # Data serialization
-  "TOML",
-  "JSON",
-  "Jsonnet",
-  "YAML",
-
-  # Compiled
-  "Swift",
-  "CSharp",
-
-  # Configuration / Automation
-  "Ansible",
-  "Docker",
-  "Makefile",
-  "Terraform",
-  "Yarn",
-
-  # Other
-  "Biome",
+  "C",
+  # https://github.com/zed-extensions/clojure/blob/main/languages/clojure/config.toml
   "Clojure",
-  "Emmet",
-  "GLSL",
-  "Prisma",
-  "Proto",
+  # https://github.com/k0tran/zed_neocmake/blob/master/languages/cmake/config.toml
+  "CMake",
+  "C++",
+  # https://github.com/zed-extensions/csharp/blob/main/languages/csharp/config.toml
+  "CSharp",
+  # (!) "DAML",
+  # https://github.com/zed-extensions/dart/blob/main/languages/dart/config.toml
+  "Dart",
+  "Git Commit",
+  "Go",
+  # https://github.com/valentinegb/zed-groovy/blob/main/languages/groovy/config.toml
+  "Groovy",
+  # https://github.com/zed-extensions/haskell/blob/main/languages/haskell/config.toml
+  "Haskell",
+  # https://github.com/zed-industries/zed/blob/main/extensions/html/languages/html/config.toml
+  "HTML",
+  # (!) "Ink",
+  # https://github.com/zed-extensions/java/blob/main/languages/java/config.toml
+  "Java",
+  # Should include JavaScript React.
+  "JavaScript",
+  # https://github.com/zed-extensions/kotlin/blob/main/languages/kotlin/config.toml
+  "Kotlin",
+  # Literate Haskell support should be included in `Haskell` soon.
+  # https://github.com/zed-extensions/haskell/pull/13
+  "Literate Haskell",
+  # https://github.com/zed-extensions/lua/blob/main/languages/lua/config.toml
+  "Lua",
+  # Should also be supported.
+  "Luau",
+  # (!) "Email",
+  "Markdown",
+  # https://github.com/zed-extensions/nix/blob/main/languages/nix/config.toml
+  "Nix",
+  # https://github.com/hron/zed-org/blob/main/languages/org/config.toml
+  "Org",
+  # https://github.com/zed-extensions/php/blob/main/languages/php/config.toml
+  "PHP",
+  # https://github.com/wingyplus/zed-powershell/blob/main/languages/powershell/config.toml
+  "PowerShell",
+  # https://github.com/zed-industries/zed/blob/93a226df0cb7c7def50c800044fa5047599f8f2c/assets/settings/default.json#L2141
+  # (!) "Plain Text",
+  "Python",
+  # https://github.com/zed-extensions/ruby/blob/main/languages/ruby/config.toml
+  "Ruby",
+  "Rust",
+  # https://github.com/scalameta/metals-zed/blob/main/languages/scala/config.toml
+  "Scala",
+  # https://github.com/zed-industries/zed/blob/main/crates/languages/src/bash/config.toml
+  "Shell Script",
+  # https://github.com/zarifpour/zed-solidity/blob/main/languages/solidity/config.toml
   "Solidity",
-
-  # Not supported yet
-  # "typescriptreact",
-  # "gitcommit",
+  # https://github.com/zed-extensions/swift/blob/main/languages/swift/config.toml
+  "Swift",
+  # https://github.com/zed-extensions/toml/blob/main/languages/toml/config.toml
+  "TOML",
+  # Should include TypeScript React.
+  "TypeScript",
+  # https://github.com/zed-extensions/typst/blob/main/languages/typst/config.toml
+  "Typst",
+  # https://github.com/zed-extensions/zig/blob/main/languages/zig/config.toml
+  "Zig",
+  # https://github.com/rzukic/zed-latex/blob/main/languages/latex/config.toml
+  "LaTeX",
 ]
