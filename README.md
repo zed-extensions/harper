@@ -46,7 +46,7 @@ You can configure where these dictionaries are stored. See below for more info.
 This extension lets you customise the [Harper LS configuration](https://writewithharper.com/docs/integrations/language-server#Configuration) by for example adding the following to your `Zed/settings.json`:
 
 ```jsonc
-"lsp: {
+"lsp": {
     "harper-ls": {
         "settings": {
             "harper-ls": {
@@ -72,7 +72,7 @@ Harper dictionary files should be simple line-separated text files. Learn more a
 You can configure where to store your user dictionary, workspace dictionary and file dictionaries by editing `Zed/settings.json`:
 
 ```jsonc
-"lsp: {
+"lsp": {
     "harper-ls": {
         "settings": {
             "harper-ls": {
