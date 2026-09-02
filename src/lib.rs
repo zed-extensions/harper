@@ -41,6 +41,11 @@ impl HarperExtension {
         }
 
         self.install_binary(language_server_id)
+            .or_else(|install_err| {
+                self.find_installed_binary().ok_or_else(|| {
+                    format!("{install_err} (no installed version found to fall back to)")
+                })
+            })
     }
 
     fn install_binary(
@@ -133,6 +138,35 @@ impl HarperExtension {
             path: binary_path,
             env: None,
         })
+    }
+
+    fn find_installed_binary(&self) -> Option<HarperBinary> {
+        let (platform, _) = zed::current_platform();
+
+        let prefix = format!("{NAME}-");
+        let binary_name = if platform == zed::Os::Windows {
+            format!("{NAME}.exe")
+        } else {
+            NAME.to_string()
+        };
+
+        fs::read_dir(".")
+            .ok()?
+            .flatten()
+            .find_map(|entry| {
+                let dir_name = entry.file_name().into_string().ok()?;
+                let binary_path = entry.path().join(&binary_name);
+
+                if dir_name.starts_with(&prefix) && binary_path.exists() {
+                    Some(binary_path)
+                } else {
+                    None
+                }
+            })
+            .map(|binary_path| HarperBinary {
+                path: binary_path,
+                env: None,
+            })
     }
 }
 
