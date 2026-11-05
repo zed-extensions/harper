@@ -26,10 +26,15 @@ languages = [
   "C++",
   # https://github.com/zed-extensions/csharp/blob/main/languages/csharp/config.toml
   "CSharp",
-  # (!) "DAML",
+  # https://github.com/DLC-link/zed-daml-lsp/blob/main/languages/daml/config.toml
+  "DAML",
   # https://github.com/zed-extensions/dart/blob/main/languages/dart/config.toml
   "Dart",
+  # https://github.com/zed-extensions/elixir/blob/main/languages/elixir/config.toml
+  "Elixir",
   "Git Commit",
+  # https://github.com/gleam-lang/zed-gleam/blob/main/languages/gleam/config.toml
+  "Gleam",
   "Go",
   # https://github.com/valentinegb/zed-groovy/blob/main/languages/groovy/config.toml
   "Groovy",
@@ -37,11 +42,13 @@ languages = [
   "Haskell",
   # https://github.com/zed-industries/zed/blob/main/extensions/html/languages/html/config.toml
   "HTML",
-  # (!) "Ink",
+  # https://github.com/yuna0x0/zed-ink/blob/main/languages/ink/config.toml
+  "Ink",
   # https://github.com/zed-extensions/java/blob/main/languages/java/config.toml
   "Java",
   # Should include JavaScript React.
   "JavaScript",
+  # (!) "JJ Commit",
   # https://github.com/zed-extensions/kotlin/blob/main/languages/kotlin/config.toml
   "Kotlin",
   # Literate Haskell support should be included in `Haskell` soon.
@@ -53,6 +60,10 @@ languages = [
   "Luau",
   # (!) "Email",
   "Markdown",
+  # https://github.com/prefrontal-systems/zed-quarto-plugin/blob/main/languages/quarto/config.toml
+  "Quarto",
+  # https://github.com/ocsmit/zed-r/blob/main/languages/rmarkdown/config.toml
+  "RMarkdown",
   # https://github.com/zed-extensions/nix/blob/main/languages/nix/config.toml
   "Nix",
   # https://github.com/hron/zed-org/blob/main/languages/org/config.toml
@@ -64,6 +75,8 @@ languages = [
   # https://github.com/zed-industries/zed/blob/93a226df0cb7c7def50c800044fa5047599f8f2c/assets/settings/default.json#L2141
   # (!) "Plain Text",
   "Python",
+  # https://github.com/ocsmit/zed-r/blob/main/languages/r/config.toml
+  "R",
   # https://github.com/zed-extensions/ruby/blob/main/languages/ruby/config.toml
   "Ruby",
   "Rust",
