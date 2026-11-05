@@ -53,6 +53,10 @@ languages = [
   "Luau",
   # (!) "Email",
   "Markdown",
+  # https://github.com/prefrontal-systems/zed-quarto-plugin/blob/main/languages/quarto/config.toml
+  "Quarto",
+  # https://github.com/ocsmit/zed-r/blob/main/languages/rmarkdown/config.toml
+  "RMarkdown",
   # https://github.com/zed-extensions/nix/blob/main/languages/nix/config.toml
   "Nix",
   # https://github.com/hron/zed-org/blob/main/languages/org/config.toml
