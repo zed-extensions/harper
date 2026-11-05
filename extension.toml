@@ -73,6 +73,8 @@ languages = [
   # https://github.com/zed-industries/zed/blob/93a226df0cb7c7def50c800044fa5047599f8f2c/assets/settings/default.json#L2141
   # (!) "Plain Text",
   "Python",
+  # https://github.com/ocsmit/zed-r/blob/main/languages/r/config.toml
+  "R",
   # https://github.com/zed-extensions/ruby/blob/main/languages/ruby/config.toml
   "Ruby",
   "Rust",
