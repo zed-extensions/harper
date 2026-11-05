@@ -29,6 +29,8 @@ languages = [
   # (!) "DAML",
   # https://github.com/zed-extensions/dart/blob/main/languages/dart/config.toml
   "Dart",
+  # https://github.com/zed-extensions/elixir/blob/main/languages/elixir/config.toml
+  "Elixir",
   "Git Commit",
   "Go",
   # https://github.com/valentinegb/zed-groovy/blob/main/languages/groovy/config.toml
