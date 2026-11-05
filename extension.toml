@@ -26,7 +26,8 @@ languages = [
   "C++",
   # https://github.com/zed-extensions/csharp/blob/main/languages/csharp/config.toml
   "CSharp",
-  # (!) "DAML",
+  # https://github.com/DLC-link/zed-daml-lsp/blob/main/languages/daml/config.toml
+  "DAML",
   # https://github.com/zed-extensions/dart/blob/main/languages/dart/config.toml
   "Dart",
   # https://github.com/zed-extensions/elixir/blob/main/languages/elixir/config.toml
