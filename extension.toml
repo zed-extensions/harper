@@ -42,7 +42,8 @@ languages = [
   "Haskell",
   # https://github.com/zed-industries/zed/blob/main/extensions/html/languages/html/config.toml
   "HTML",
-  # (!) "Ink",
+  # https://github.com/yuna0x0/zed-ink/blob/main/languages/ink/config.toml
+  "Ink",
   # https://github.com/zed-extensions/java/blob/main/languages/java/config.toml
   "Java",
   # Should include JavaScript React.
