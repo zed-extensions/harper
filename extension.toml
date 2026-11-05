@@ -32,6 +32,8 @@ languages = [
   # https://github.com/zed-extensions/elixir/blob/main/languages/elixir/config.toml
   "Elixir",
   "Git Commit",
+  # https://github.com/gleam-lang/zed-gleam/blob/main/languages/gleam/config.toml
+  "Gleam",
   "Go",
   # https://github.com/valentinegb/zed-groovy/blob/main/languages/groovy/config.toml
   "Groovy",
