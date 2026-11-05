@@ -46,6 +46,7 @@ languages = [
   "Java",
   # Should include JavaScript React.
   "JavaScript",
+  # (!) "JJ Commit",
   # https://github.com/zed-extensions/kotlin/blob/main/languages/kotlin/config.toml
   "Kotlin",
   # Literate Haskell support should be included in `Haskell` soon.
